@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-UltraLight.ttf") format("ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-Thin.ttf") format("ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("./assets/gilroy-fonts/Gilroy-Heavy.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+.mobile-menu {
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-menu.open {
+  visibility: visible;
+  opacity: 1;
+}
+.mobile-menu .mobile-content {
+  background-color: #131313;
+  width: 300px;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(calc(-100% - 50px));
+  -ms-transform: translateX(calc(-100% - 50px));
+  transform: translateX(calc(-100% - 50px));
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.mobile-menu.open .mobile-content {
+  transform: none;
+}
+.single-business:not(:last-child) .child {
+  border-bottom: 1px solid #262626;
+}
+@media (min-width: 992px) {
+  .single-business:first-child .child,
+  .single-business:nth-child(3) .child {
+    border-right: 1px solid #262626;
+  }
+  .single-business:nth-child(3) .child,
+  .single-business:last-child .child {
+    border-bottom: 1px solid #262626;
+  }
+}
+@media (min-width: 1024px) {
+  .single-business:not(:last-child) .child {
+    border-right: 1px solid #262626;
+  }
+}
