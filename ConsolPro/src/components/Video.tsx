@@ -10,7 +10,7 @@ const Video = () => {
           className="h-full w-full object-cover object-center"
         />
       </div>
-      <button className="absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]">
+      <button className="play-btn absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]">
         <img
           src="/images/video-icon-bg.svg"
           className="w-[150px] lg:w-[218px]"

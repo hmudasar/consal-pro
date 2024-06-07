@@ -74,6 +74,83 @@
 .single-business:not(:last-child) .child {
   border-bottom: 1px solid #262626;
 }
+.menu {
+}
+.menu ul {
+}
+.menu ul li {
+}
+.menu ul li a {
+  position: relative;
+}
+.menu ul li a:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  bottom: -3px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #edbc5a;
+  transition: all 0.4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu ul li a:hover:before {
+  width: 100%;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.explore-btn {
+  transition: all 0.4s ease-in-out;
+}
+.explore-btn:hover {
+  box-shadow: 0px 5px 40px rgba(237, 188, 90, 0.5);
+  transform: scale(0.8);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-image {
+  animation: rotate 10s linear infinite;
+}
+.single-blog:hover button {
+  box-shadow: 0px 5px 40px rgba(237, 188, 90, 0.5);
+  transform: scale(1.2);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+@keyframes up-and-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.up-and-down {
+  animation: up-and-down 7s ease-in-out infinite;
+}
+.single-blog:hover,
+.single-business .child:hover {
+  background-color: #262626;
+  box-shadow: 0 0 40px rgba(38, 38, 38, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+.play-btn:hover img {
+  animation: rotate 5s linear;
+}
 @media (min-width: 992px) {
   .single-business:first-child .child,
   .single-business:nth-child(3) .child {

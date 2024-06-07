@@ -96,7 +96,7 @@ const Blogs = () => {
         </div>
         <Slider {...sliderSettings} className="home-slider">
           {blogsData.map((data, i) => (
-            <div className="single-slider px-3 pb-3" key={i}>
+            <div className="single-blog px-3 pb-3" key={i}>
               <span className="text-gray text-base leading-[29px] block mb-[20px]">
                 {data.date}
               </span>

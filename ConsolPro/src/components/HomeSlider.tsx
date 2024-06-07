@@ -62,11 +62,11 @@ const HomeSlider = () => {
     <div className="home-slider relative lg:pt-[60px] pb-[120px] px-5">
       <img
         src="/images/Dawn.png"
-        className="absolute left-[15px] top-[50px] h-[150px] w-[150px] xl:h-[250px] xl:w-[250px] 2xl:h-[308px] 2xl:w-[308px]"
+        className="rotate-image absolute left-[15px] top-[50px] h-[150px] w-[150px] xl:h-[250px] xl:w-[250px] 2xl:h-[308px] 2xl:w-[308px]"
       />
       <img
         src="/images/Spiral-1.png"
-        className="absolute right-[55px] lg:right-[155px] top-[65px] h-[140px] w-[140px] xl:h-[220px] xl:w-[220px] 2xl:h-[292px] 2xl:w-[275px] z-1"
+        className="up-and-down absolute right-[55px] lg:right-[155px] top-[65px] h-[140px] w-[140px] xl:h-[220px] xl:w-[220px] 2xl:h-[292px] 2xl:w-[275px] z-1"
       />
 
       <img
@@ -116,7 +116,7 @@ const HomeSlider = () => {
                           </h3>
                           <img src="/images/line.svg" alt="line" />
                         </div>
-                        <button className="bg-orange w-[80px] h-[80px] lg:h-[190px] lg:w-[190px] rounded-[50%] p-3 lg:p-10 grid items-center justify-center">
+                        <button className="explore-btn bg-orange w-[80px] h-[80px] lg:h-[190px] lg:w-[190px] rounded-[50%] p-3 lg:p-10 grid items-center justify-center">
                           <img
                             src="/images/send.svg"
                             alt="send"
